@@ -5,7 +5,7 @@ def spicy_foods
   [
     { name: 'Green Curry', cuisine: 'Thai', heat_level: 9 },
     { name: 'Buffalo Wings', cuisine: 'American', heat_level: 3 },
-    { name: 'Mapo Tofu', cuisine: 'Sichuan', heat_level: 6 }
+    { name: 'Mapo Tofu', cuisine: 'Sichuan', heat_level: 6 },
   ]
 end
 
@@ -13,12 +13,14 @@ end
 # with the names of each spicy food
 def get_names(spicy_foods)
   # your code here
+  spicy_foods.map { |food| food[:name] }
 end
 
 # given an array of spicy foods, **return an array of hashes** 
 # where the heat level of the food is greater than 5
 def spiciest_foods(spicy_foods)
   # your code here
+
 end
 
 # given an array of spicy foods, **output to the terminal**
